@@ -1,0 +1,25 @@
+package novo;
+
+import javax.swing.JOptionPane;
+
+public class M3 {
+	
+	public static void main(String[] args){
+		double m, pt, pe, ad, np;
+		
+		pt =Double.parseDouble(JOptionPane.showInputDialog("Portfólio: "));
+		pe =Double.parseDouble(JOptionPane.showInputDialog("Prova eletronica: "));
+		ad =Double.parseDouble(JOptionPane.showInputDialog("Avaliação dissertativa: "));
+		np =Double.parseDouble(JOptionPane.showInputDialog("Nota do professor: "));
+		
+		m = (pt + pe + ad + np)/2;
+		
+		if( m >= 6 ){
+			JOptionPane.showMessageDialog(null,"Aprovado: " + m);
+		} else{
+			JOptionPane.showMessageDialog(null,"Reprovado: " + m);
+		}
+			
+		}
+
+}
